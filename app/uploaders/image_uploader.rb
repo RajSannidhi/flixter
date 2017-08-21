@@ -5,7 +5,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
+   storage :file
   # storage :fog
 
   # Override the directory where uploaded files will be stored.
@@ -25,15 +25,15 @@ class ImageUploader < CarrierWave::Uploader::Base
   # Process files as they are uploaded:
   # process scale: [200, 300]
 
-    process :auto_orient
+  #  process :auto_orient
 
-    def auto_orient
-      manipulate! do |image|
-        image.tap(&:auto_orient)
-      end
-    end
+  #  def auto_orient
+  #    manipulate! do |image|
+  #      image.tap(&:auto_orient)
+  #    end
+  #  end
 
-    process resize_to_fit: [800, 800]
+    process resize_to_fill: [800, 350]
 
   #
   # def scale(width, height)
