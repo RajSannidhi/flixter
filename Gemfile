@@ -39,6 +39,7 @@ gem 'mini_magick'
 gem 'figaro'
 gem 'fog-aws'
 gem 'carrierwave-aws'
+gem 'stripe'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
