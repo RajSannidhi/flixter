@@ -40,6 +40,7 @@ gem 'figaro'
 gem 'fog-aws'
 gem 'carrierwave-aws'
 gem 'stripe'
+gem 'ranked-model'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
